@@ -454,7 +454,8 @@ def main():
             "ZOMATO" : 11123458,
             "TCS" : 11108354,
             "HDFC" : 341249,
-            "NIFTY" : 256265
+            "NIFTY" : 256265,
+            "Hemal" : 11111
         }
         selected_instrument = st.selectbox("📊 Choose instrument:", list(instruments.keys()))
         instrument_token = instruments[selected_instrument]
