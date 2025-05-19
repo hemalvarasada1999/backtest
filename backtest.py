@@ -445,17 +445,11 @@ def main():
         st.markdown("## 🎯 Select Instrument")
         instruments = {
             "NIFTY25MAYFUT": 14626050,
-            "NIFTY25APRFUT (NIFTY)": 8960258,
-            "NIFTY25MAYFUT (NIFTY)": 14626050,
-            "BANKNIFTY25MARFUT (BANKNIFTY)": 58958,
-            "BANKNIFTY25APRFUT (BANKNIFTY)": 54445,
-            "BANKNIFTY25MAYFUT (BANKNIFTY)": 57130,
-            "TRENT25MARFUT (TRENT)" : 11111426,
-            "ZOMATO" : 11123458,
-            "TCS" : 11108354,
-            "HDFC" : 341249,
-            "NIFTY" : 256265,
-            "Hemal" : 11111
+            "NIFTY25JUNFUT": 14536962,
+            "NIFTY25JULFUT": 13623298,
+            "BANKNIFTY25MAYFUT": 14625282,
+            "BANKNIFTY25JUNFUT": 14536194,
+            "BANKNIFTY25JULFUT": 13622530
         }
         selected_instrument = st.selectbox("📊 Choose instrument:", list(instruments.keys()))
         instrument_token = instruments[selected_instrument]
