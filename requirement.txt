@@ -1,6 +1,7 @@
-streamlit
-pandas
-python-dotenv
-Pillow
 kiteconnect==5.0.1
-
+numpy==2.2.6
+pandas==2.2.3
+pillow==11.2.1
+python-dotenv==1.1.0
+requests==2.32.3
+streamlit==1.45.1
