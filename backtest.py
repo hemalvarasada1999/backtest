@@ -3,7 +3,6 @@ import streamlit as st
 import datetime
 import pandas as pd
 from kiteconnect import KiteConnect
-from dotenv import load_dotenv
 from PIL import Image
 import pandas as pd
 import datetime
@@ -318,9 +317,8 @@ def run_backtest(api_key, access_token, instrument_token,
 
 
 def main():
-    load_dotenv()
-    api_key = os.getenv("API_KEY", "")
-    access_token = os.getenv("ACCESS_TOKEN", "")
+    api_key = "2t4bvbp46649vlt3"
+    access_token = "PAY1dkWUgFx5Q6K4vgnRlc9gQue7zxy7"
 
     # Page Config for Title & Icon
     st.set_page_config(
