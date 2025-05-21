@@ -537,6 +537,22 @@ def main():
             )
 
             st.markdown("---")
+            # --- Trade Stats Summary ---
+            total_trades = len(positions_df)
+            target_hits = positions_df['Exit Reason'].str.contains("Target Hit", case=False).sum()
+            stoploss_hits = positions_df['Exit Reason'].str.contains("Stoploss Hit", case=False).sum()
+            early_exits = positions_df['Exit Reason'].str.contains("Early Exit", case=False).sum()
+            market_close = positions_df['Exit Reason'].str.contains("Market Close", case=False).sum()
+
+            st.markdown("### 📊 Trade Summary Stats")
+            col1, col2, col3, col4, col5 = st.columns(5)
+            col1.metric("📈 Total Trades", total_trades)
+            col2.metric("🎯 Target Hits", target_hits)
+            col3.metric("🛑 Stoploss Hits", stoploss_hits)
+            col4.metric("🔁 Early Exits", early_exits)
+            col5.metric("⏱️ Market Close", market_close)
+
+            st.markdown("---")
             st.markdown("🧠 *Powered by SMA logic + Tradeon backtesting engine*")
             st.markdown("Developed by Tradeon❤️")
             st.markdown("---")
