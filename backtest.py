@@ -314,7 +314,7 @@ def run_backtest(api_key, access_token, instrument_token,
 
 def main():
     api_key = "d97r33dl25jdqeiq"
-    access_token = "REWgwa8jwcDG30xEXTz6VehN0B9NqYVx"
+    access_token = "F8x7k0igluVH39cJjnCQH75AA12mlGcW"
 
     # Page Config for Title & Icon
     st.set_page_config(
