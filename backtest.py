@@ -314,7 +314,7 @@ def run_backtest(api_key, access_token, instrument_token,
 
 def main():
     api_key = "d97r33dl25jdqeiq"
-    access_token = "tSLIiOuyVWV2UPCli1geCXZqQyH1G6Q0"
+    access_token = "dIQ0E4H9vP1eW0hfRnQNxSLo59Ymxmta"
 
     # Page Config for Title & Icon
     st.set_page_config(
@@ -445,7 +445,8 @@ def main():
             "NIFTY25JULFUT": 13623298,
             "BANKNIFTY25MAYFUT": 14625282,
             "BANKNIFTY25JUNFUT": 14536194,
-            "BANKNIFTY25JULFUT": 13622530
+            "BANKNIFTY25JULFUT": 13622530,
+            "CRUDEOILJULFUT": 31134220
         }
         selected_instrument = st.selectbox("📊 Choose instrument:", list(instruments.keys()))
         instrument_token = instruments[selected_instrument]
