@@ -446,7 +446,8 @@ def main():
             "BANKNIFTY25MAYFUT": 14625282,
             "BANKNIFTY25JUNFUT": 14536194,
             "BANKNIFTY25JULFUT": 13622530,
-            "CRUDEOILJULFUT": 31134220
+            "CRUDEOILJULFUT": 31134220,
+            "NIFTY25AUGFUT" : 16409858
         }
         selected_instrument = st.selectbox("📊 Choose instrument:", list(instruments.keys()))
         instrument_token = instruments[selected_instrument]
