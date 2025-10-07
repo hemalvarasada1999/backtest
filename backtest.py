@@ -314,7 +314,7 @@ def run_backtest(api_key, access_token, instrument_token,
 
 def main():
     api_key = "2t4bvbp46649vlt3"
-    access_token = "uF6Cs75J1TOK8lSblP7FJwmmm5fznncO"
+    access_token = "wrNQFROf9N17ag4Um7lt3l9NSn5O1g17"
 
     # Page Config for Title & Icon
     st.set_page_config(
@@ -440,8 +440,8 @@ def main():
     with st.container():
         st.markdown("## 🎯 Select Instrument")
         instruments = {
-            "NIFTY": 13568258,
-            "BANKNIFTY" : 13566722
+            "NIFTY": 13355010,
+            "BANKNIFTY" : 13349122
         }
         selected_instrument = st.selectbox("📊 Choose instrument:", list(instruments.keys()))
         instrument_token = instruments[selected_instrument]
